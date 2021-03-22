@@ -123,8 +123,7 @@ other perks). Michael's goal is to reduce cancellations to a rate of 20%.
 
 
 **CustomerType** categories:
-- Contract - when the booking has an allotment or other type of
-- contract associated to it;
+- Contract - when the booking has an allotment (pre-negotiated room) or other type of contract associated to it (related to OTAs or companies);
 - Group – when the booking is associated to a group;
 - Transient – when the booking is not part of a group or contract, and is not associated to other transient booking;
 - Transient-party – when the booking is transient, but is associated to at least other transient booking
@@ -135,7 +134,7 @@ other perks). Michael's goal is to reduce cancellations to a rate of 20%.
 - Refundable – a deposit was made with a value under the total cost of stay.
 
 **Meal** categories:
-- Undefined/SC – no meal package;
+- Undefined/SC (self-catering) – no meal package (only room);
 - BB – Bed & Breakfast;
 - HB – Half board (breakfast and one other meal – usually dinner);
 - FB – Full board (breakfast, lunch and dinner)
@@ -152,6 +151,11 @@ other perks). Michael's goal is to reduce cancellations to a rate of 20%.
 - The name of the individuals and company involved are anonymized to protect
 confidentiality. Although, the data set provided comes from a real business.
 - Net demand is defined as demand minus cancellations.
+- AssignedRoomType can be different of ReservedRoomType (possible reasons: overbooking, after arrival upgrade)
+- Company can be the same as Agent
+- Country shouldn't be used for analysis as its quality is dependent on chek-in
+- CustomerType Transient or Transient-party examples: direct booking, booking website, ...
+
 
 ## Expected Outcomes
 
